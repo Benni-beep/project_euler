@@ -4,7 +4,7 @@
 
 "use strict"
 const fs = require('fs');
-const input = fs.readFileSync('./11_-_largest_product_in_a_grid.txt', { encoding: 'utf8' }).split("\r\n").map(str => str.split(" ")).map(arr => arr.map(str => parseInt(str)));
+const input = fs.readFileSync('./11_rawInput.txt', { encoding: 'utf8' }).split("\r\n").map(str => str.split(" ")).map(arr => arr.map(str => parseInt(str)));
 
 const product = (arr) => arr.reduce((a, b) => a * b, 1);
 
